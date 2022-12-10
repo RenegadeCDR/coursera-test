@@ -64,31 +64,58 @@ h1 {
   margin-right: auto;
   margin-top: 20px;
 }
+
 /*dummy text paragraphs*/
 .dummyText {
   margin-left: 2%;
   margin-right: 2%;
 }
 /*back to the top links*/
-.backToTop {
-  text-align: center;
-  color: black;
+.menuItems a {
+  outline: none;
   text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.menuItems a:link {
+  color: #060c01eb;
+}
+
+.menuItems a:visited {
+  color: #23167a;
+}
+
+.menuItems a:focus {
+  border-bottom: 1px solid;
+  background: #2f2e2e;
+}
+
+.menuItems a:hover {
+  border-bottom: 1px solid;
+  background: #2f21f8;
+}
+
+.menuItems a:active {
+  background: #010453;
+  color: #030357;
 }
 
 /*responsive boiler plates*/
-/********** Large devices only **********/
+/********** Xtra Large devices only **********/
 @media (min-width: 1200px) {
 }
 
-/********** Medium devices only **********/
+/********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 }
 
-/********** Small devices only **********/
+/********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 }
 
-/********** Extra small devices only **********/
+/********** Small devices only **********/
 @media (max-width: 767px) {
+  .menuItems {
+    width: 100%;
+  }
 }
